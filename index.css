@@ -1,0 +1,246 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: rgb(247, 247, 247);
+    /* background-image: url('homePage.jpeg'); */
+    /* background-size:auto; */
+   /* background-size: calc(10-12); */
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header {
+    background: rgb(76, 37, 14);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: fixed;
+    z-index: 2;
+}
+header sub{
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    padding-left: 20px;
+    font-size:25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav a {
+    padding: 20px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.navIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navIcons img,
+.navIcons input {
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+#searchText {
+    padding: 7.5px;
+    border-radius:60px;
+    border: none;
+}
+#searchIcon{
+    height: 32px;
+    width: 32px;
+    position: relative;
+    left: -53px;
+}
+#navLine {
+    height: 20px;
+    width: 25px;
+}
+
+#bag {
+    height: 23px;
+    width: 25px;
+}
+
+#wishlist-nav {
+    height: 20px;
+    width: 25px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.nav a {
+    color: white;
+}
+
+#navLine {
+    display: none;
+}
+
+
+.phoneNav {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: #043f57e7;
+    z-index: 2;
+}
+.phoneNav img{
+    height: 28px;
+    width: 28px;
+    padding: 29px;
+    float: right;
+    position: absolute;
+    left: 77%;
+    top: 0%;
+
+}
+.phoneNavItems{
+    margin-top: 130px;
+}
+.phoneNavItems > *{
+    padding: 5px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width:700px) {
+    .choose-section {
+        flex-wrap: wrap;
+    }
+    .nav,
+    #searchText,
+    #wishlist-nav,
+    #bag,
+    #searchIcon,
+    #profile
+     {
+        display: none;
+    }
+
+    #navLine {
+        display: flex;
+    }
+    .brand-section img {
+        height: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 950px) {
+
+    
+    .footer-subcontainer{
+        flex-wrap: nowrap;
+        font-size: x-small;
+        padding: 5px;
+    }
+    .footer-subcontainer-div1{
+        justify-content: space-around;
+        width: 100%;
+        margin: 0px;
+    }
+    .footer-subcontainer-div2{
+        width: 35%;
+        padding: 0px;
+        padding-left: 5px;
+        padding-top: 5px;
+        /* align-items: center; */
+    }
+    .contact-sec{
+        flex-wrap: wrap;
+        align-items:start;
+        padding: 0px;
+        width: 100%;
+    }
+   
+    .contact-sec > *{
+        padding-bottom: 5px;
+    }
+    
+    .get-to-know,
+    .let-us-help,
+    .consumer-policy {
+        padding: 5px;
+    }
+    
+    #call{
+        height: 20px;
+        padding-right: 10px;  
+    }
+
+    #intro-pic {
+        height: 320px;
+        width: 350px;
+    }
+
+    .home-intro {
+        flex-wrap: wrap-reverse;
+    }
+}
+@media only screen and (max-width:600px) {
+    .contact-sec{
+        flex-direction: column;
+    }
+    .shop-page-item-div{
+        margin: 0px;
+        justify-content: space-around;
+        margin-top: 15px;
+        height: 200px;
+        width: 150px;
+    }
+    .shop-page-item-desc{
+        height: 200px;
+        width: 150px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+    }
+    .shop-page-item-desc > *{
+        font-size:x-small;
+    }
+    .rating{
+        height: 15px;
+        width: 80px;
+    }
+    .product-colors span {
+        height: 12px;
+        width: 12px;
+    }
+    .shop-page-items{
+        padding: 0px;
+        margin: 0px;
+    }
+    .add-to-bag{
+        font-size:60%;
+        padding: 2px;
+    }
+}
